@@ -1,0 +1,134 @@
+/* You can add global styles to this file, and also import other style files */
+$primary: #0000FF;
+$danger: #FF0000;
+$success: #008000;
+$white: #fff;
+$paddingButton: 6px 5px;
+
+.card-photo {
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: 9px 11px 12px -10px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: 9px 11px 12px -10px rgba(0, 0, 0, 0.26);
+    box-shadow: 9px 11px 12px -10px rgba(0, 0, 0, 0.26);
+}
+
+.card-photo.danger {
+    border: 2px solid $danger;
+    -webkit-box-shadow: 9px 11px 12px -10px rgba(255, 0, 0, 0.7);
+    -moz-box-shadow: 9px 11px 12px -10px rgba(255, 0, 0, 0.7);
+    box-shadow: 9px 11px 12px -10px rgba(255, 0, 0, 0.7);
+}
+
+.card-photo.success {
+    border: 2px solid $success;
+    -webkit-box-shadow: 9px 11px 12px -10px rgba(0, 128, 0, 0.7);
+    -moz-box-shadow: 9px 11px 12px -10px rgba(0, 128, 0, 0.7);
+    box-shadow: 9px 11px 12px -10px rgba(0, 128, 0, 0.7);
+}
+
+.card-photo.success::before {
+    content: attr(status);
+    position: absolute;
+    background-color: $success;
+    color: $white;
+    width: 300px;
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+    top: 50px;
+    left: -70px;
+    transform: rotateZ(-45deg);
+    font-weight: bold;
+    z-index: 1;
+
+}
+
+.card-photo.danger::before {
+    content: attr(status);
+    position: absolute;
+    background-color: $danger;
+    color: $white;
+    width: 300px;
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+    top: 50px;
+    left: -70px;
+    transform: rotateZ(-45deg);
+    font-weight: bold;
+    z-index: 1;
+
+}
+
+.card-image {
+    position: relative;
+    cursor: pointer;
+
+    i {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -50px;
+        margin-top: -50px;
+        font-size: 100px;
+        opacity: 0.3;
+    }
+}
+
+.card-controls {
+    padding: 10px;
+
+    .btn {
+        padding: $paddingButton;
+    }
+}
+
+.buttons {
+    text-align: right;
+}
+
+.text small {
+    color: #00000066;
+}
+
+
+
+.self-primary {
+    color: $primary;
+    border-color: $primary;
+}
+
+.self-primary:hover {
+    color: $white;
+    background-color: $primary;
+}
+
+.self-danger {
+    color: $danger;
+    border-color: $danger;
+}
+
+.self-danger:hover {
+    color: $white;
+    background-color: $danger;
+}
+
+.self-success {
+    color: $success;
+    border-color: $success;
+}
+
+.self-success:hover {
+    color: $white;
+    background-color: $success;
+
+}
+
+.noFiltersActive {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2em;
+}

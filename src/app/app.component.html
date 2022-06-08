@@ -1,0 +1,136 @@
+
+
+<div class="row" style="padding-top: 50px; padding-bottom: 50px;">
+  <div style="font-size: xx-large;">
+    <b>{{title}}</b><br>
+  </div>
+  by: Keny
+</div>
+
+
+<div style="border-style: solid; padding: 10px;">
+  <div class="row">
+    <div class="col-md-6">
+      Array 1: {{array1 | json}}
+    </div>
+  </div>
+
+  <div class="row">
+    <b>Uniq:</b> Valores duplicados são removidos <br>
+    <code>_.uniq(array)</code>
+  </div>
+
+  <div class="row">
+    <button class="btn btn-primary form-control" type="button" (click)="uniq()">Executar uniq</button>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      Resultado Uniq: {{uniqResult | json}}
+    </div>
+  </div>
+</div>
+
+
+
+<div style="border-style: solid; padding: 10px; background-color: rgb(230, 230, 230);">
+  <div class="row">
+    <div class="col-md-6">
+      Array 1: {{array1 | json}}<br>
+      Array 2: {{array2 | json}}
+    </div>
+  </div>
+
+  <div class="row">
+    <b>Intersection:</b> Retorna um array com valores que estão em ambos os arrays <br>
+    <code>_.intersection(array1, array2)</code>
+  </div>
+
+  <div class="row">
+    <button class="btn btn-primary form-control" type="button" (click)="intersection()">Executar Intersection</button>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      Resultado Intersection: {{intersectionResult | json}}
+    </div>
+  </div>
+</div>
+
+
+
+<div style="border-style: solid; padding: 10px;">
+  <div class="row">
+    <div class="col-md-6">
+      Array 1: {{unionArray1 | json}}<br>
+      Array 2: {{unionArray2 | json}}<br>
+      <code>_.unionBy(this.unionArray1, this.unionArray2, 'id');</code>
+    </div>
+  </div>
+
+  <div class="row">
+    <b>UnionBy:</b> União de 2 arrays, mas que aceita um argumento/condição <br>
+    <code>_.unionBy(array1, array2, condição)</code>
+  </div>
+
+  <div class="row">
+    <button class="btn btn-primary form-control" type="button" (click)="unionBy()">Executar UnionBy</button>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      Resultado UnionBy: {{unionResult | json}}<br>
+      Resultado UnionBy sem argumento: {{unionResult2 | json}}
+    </div>
+  </div>
+</div>
+
+
+
+<div style="border-style: solid; padding: 10px; background-color: rgb(230, 230, 230);">
+  <div class="row">
+    <div class="col-md-6">
+      String: {{camelCaseString | json}}<br>
+    </div>
+  </div>
+
+  <div class="row">
+    <b>CamelCase:</b> Converte string em camelCase <br>
+    <code>_.camelCase(string)</code>
+  </div>
+
+  <div class="row">
+    <button class="btn btn-primary form-control" type="button" (click)="camelCase()">Executar CamelCase</button>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      Resultado CamelCase: {{camelCaseStringResult | json}}<br>
+    </div>
+  </div>
+</div>
+
+
+
+<div style="border-style: solid; padding: 10px;">
+  <div class="row">
+    <div class="col-md-6">
+      Array: {{meanArray | json}}<br>
+    </div>
+  </div>
+
+  <div class="row">
+    <b>Mean:</b> Retorna a média dos valores do array <br>
+    <code>_.mean(array)</code>
+  </div>
+
+  <div class="row">
+    <button class="btn btn-primary form-control" type="button" (click)="mean()">Executar Mean</button>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      Resultado Mean: {{meanResult | json}}<br>
+    </div>
+  </div>
+</div>
