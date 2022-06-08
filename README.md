@@ -2,10 +2,6 @@
 
 Este projeto foi desenvolvido bem rapidão, com a finalidade de apenas mostrar algumas funcionalidades da biblioteca Javascript Lodash para o CodeLab do pessoal do trampo.
 
-## O que é esse tal de CodeLab?
-
-CodeLab é um evento semanal onde algum mebro da equipe compartilha conhecimentos na área de T.I. para os demais membros da equipe.
-
 ## Sobre o Lodash
 
 Lodash é uma biblioteca Javascript que fornece um conjunto de funções para que a pessoa programadora possa trabalhar com mais facilidade em tarefas que envolvam a manipulação de matrizes, strings, objetos, números, etc.
